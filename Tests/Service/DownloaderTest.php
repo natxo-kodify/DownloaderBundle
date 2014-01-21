@@ -2,14 +2,13 @@
 
 namespace Kodify\DownloaderBundle\Tests\Controller;
 
-use Symfony\Component\HttpFoundation\File\Exception\FileException;
 use Kodify\DownloaderBundle\Service\Downloader;
+use Symfony\Component\HttpFoundation\File\Exception\FileException;
 
 class DownloaderTest extends \PHPUnit_Framework_TestCase
 {
 
     protected $downloader;
-
 
     public function setUp()
     {
@@ -48,7 +47,6 @@ class DownloaderTest extends \PHPUnit_Framework_TestCase
         $nonWritablePath = '/etc/';
         $this->downloader->downloadFile('aaa', $nonWritablePath, 'bbb');
     }
-
 
     /**
      * @expectedException Symfony\Component\HttpFoundation\File\Exception\FileException
@@ -127,7 +125,7 @@ class DownloaderTest extends \PHPUnit_Framework_TestCase
         $filename = 'downloadedFile.pl';
         try {
             $this->downloader->downloadFile($downloadUrl, $path, $filename);
-        } catch(FileException $e) {
+        } catch (FileException $e) {
             $this->assertFalse(is_dir($dir));
         }
 

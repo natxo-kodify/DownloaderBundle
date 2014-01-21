@@ -15,7 +15,6 @@ function exec($command)
 
 namespace Kodify\DownloaderBundle\Tests\Controller;
 
-use Symfony\Component\HttpFoundation\File\Exception\FileException;
 use Kodify\DownloaderBundle\Service\Downloader;
 
 /**

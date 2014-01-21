@@ -5,6 +5,9 @@ use Symfony\Component\HttpFoundation\File\Exception\FileException;
 
 class Downloader
 {
+    /**
+     * @param string $url
+     */
     public function downloadFile($url, $path, $destinationFileName, $params = array(), $escapeShellCmd = true)
     {
         if (empty($path) || empty($url) || empty($destinationFileName)) {
@@ -63,4 +66,3 @@ class Downloader
         return false;
     }
 }
-

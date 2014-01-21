@@ -2,10 +2,8 @@
 
 namespace Kodify\DownloaderBundle\Tests\DependencyInjection;
 
-use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Symfony\Component\Yaml\Parser;
-
 use Kodify\DownloaderBundle\DependencyInjection\KodifyDownloaderExtension;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 class KodifyDownloaderExtensionTest extends \PHPUnit_Framework_TestCase
 {
