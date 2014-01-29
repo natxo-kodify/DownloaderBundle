@@ -1,4 +1,6 @@
 /phpunit.xml
 *~
+.idea
+*.iml
 composer.lock
 /vendor/
